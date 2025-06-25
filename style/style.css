@@ -1,0 +1,187 @@
+/* Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #555;
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Artikel Umum */
+.artikel {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.artikel h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.artikel p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.artikel img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.baca-selengkapnya {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.baca-selengkapnya:hover {
+    color: #1d6fa5;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Tambahan untuk dark mode */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .container {
+    background-color: #1e1e1e;
+}
+
+.dark-mode nav {
+    background-color: #222;
+}
+
+.dark-mode nav a {
+    color: #ccc;
+}
+
+.dark-mode nav a:hover {
+    background-color: #444;
+}
+
+/* Posisi tombol dan waktu di kanan bawah */
+.floating-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+#toggle-button {
+    margin-bottom: 8px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* mulai agak ke bawah */
+  animation: fadeInAnimation 0.8s ease-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* kembali ke posisi normal */
+  }
+}
